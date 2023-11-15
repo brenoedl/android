@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ola Mundo</string>
+    <string name="aperte_no_bot_o">Aperte no botão</string>
+    <string name="me_aperte">Me aperte</string>
+</resources>
