@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Scool</string>
+    <string name="nota_um">Grade 1</string>
+    <string name="nota_dois">Grade 2</string>
+    <string name="calc">Calculate</string>
+    <string name="media">Average</string>
+    <string name="res">0</string>
+    <string name="sit">Situation</string>
+    <string name="sitApr">Approved</string>
+    <string name="sitRec">Recake test</string>
+    <string name="sitRep">Disapproved</string>
+    <string name="msgAp">Congratulations</string>
+    <string name="msgRc">Study moreStudy more</string>
+    <string name="msgRp">Try again next year</string>
+    <string name="msgErro">Type a number</string>
+</resources>
