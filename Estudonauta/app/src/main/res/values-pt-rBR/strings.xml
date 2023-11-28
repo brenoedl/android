@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Estudonauta</string>
+    <string name="equipe">Equipe</string>
+    <string name="cursos">Cursos</string>
+    <string name="mídia">Midia</string>
+    <string name="voltar">Voltar</string>
+    <string name="tituloEquipe">Equipe Estudonauta</string>
+    <string name="caynan">Cayman Scremin (edição de cortes)</string>
+    <string name="gustavo">Gustavo Guanabara (professor)</string>
+    <string name="italo">Italo Alves (edição de cortes)</string>
+    <string name="mihel">Michel Guanabara (finalização)</string>
+    <string name="priscila">Priscila Marinho (programação)</string>
+    <string name="ramon">Ramon Felinto (design)</string>
+    <string name="vera">Vera Machado (tutoria)</string>
+    <string name="ygor">Ygor Escure (finalização)</string>
+    <string name="descricaoEquipe">\t A ideia do <b>Estudonauta</b> nasceu em 2016 e desde então vários vídeos de teste tem sido gravados para validar a ideia e modelar o formato. No final de 2017 foi aberto o alpha testing para 200 alunos fundadores e no final de 2018 foi aberto o beta testing para mais outros.\n\n\t A plataforma conta hoje com centenas de aulas, disponíveis em vários cursos que estão sendo lançados em módulos. A equipe começou com três pessoas e hoje conta com oito profissionais, cada um especializado em uma área específica.\n\n\t Logo, quando você recebe um módulo novo e se prepara para assistir todos os vídeos, o trabalho foi feito por essa equipe que listamos a seguir: "</string>
+    <string name="tituloCursos">Todos os cursos</string>
+    <string name="cursoPortugol">Curso de portugol studio</string>
+    <string name="cursoPhp">Curso de php e MySQL</string>
+    <string name="cursoAdroid">Curso de Android studio</string>
+    <string name="cursoLinC">Curso de linguagem c</string>
+    <string name="curoLinCS">Curso de linguagem c sharp</string>
+    <string name="cursoLinKotlin">Curso de linguagem kotlin</string>
+    <string name="cursoProducaoVideo">Curso de produção de videos</string>
+</resources>

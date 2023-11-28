@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Estudonauta</string>
+    <string name="equipe">Team</string>
+    <string name="cursos">Courses</string>
+    <string name="mídia">Media</string>
+    <string name="voltar">To go back</string>
+    <string name="tituloEquipe">Team Estudonauta</string>
+    <string name="caynan">Cayman Scremin (cuts edition)</string>
+    <string name="gustavo">Gustavo Guanabara (teacher)</string>
+    <string name="italo">Italo Alves (cuts edition)</string>
+    <string name="mihel">Michel Guanabara (submission)</string>
+    <string name="priscila">Priscila Marinho (programming)</string>
+    <string name="ramon">Ramon Felinto (design)</string>
+    <string name="vera">Vera Machado (tutoring)</string>
+    <string name="ygor">Ygor Escure (submission)</string>
+    <string name="descricaoEquipe">\t The idea for <b>Estudonauta</b> was born in 2016 and since then several test videos have been recorded to validate the idea and model the format. At the end of 2017, alpha testing was opened for 200 founding students and at the end of 2018, beta testing was opened for more others.\n\n\t The platform currently has hundreds of classes, available in several courses that are being launched in modules. The team started with three people and today has eight professionals, each specialized in a specific area.\n\n\t So, when you receive a new module and get ready to watch all the videos, the work was done by this team that we list below:</string>
+    <string name="tituloCursos">All courses</string>
+    <string name="cursoPortugol">studio Portugol course</string>
+    <string name="cursoPhp">PHP and MySQL course</string>
+    <string name="cursoAdroid">Android studio course</string>
+    <string name="cursoLinC">c language course</string>
+    <string name="curoLinCS">c sharp language course</string>
+    <string name="cursoLinKotlin">Kotlin language course</string>
+    <string name="cursoProducaoVideo">Video production course</string>
+</resources>
