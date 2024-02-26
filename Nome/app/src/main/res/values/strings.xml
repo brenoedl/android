@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Name</string>
+    <string name="dNome">Enter your first name</string>
+    <string name="fraseMae">Mom thanks for everything</string>
+    <string name="fraseVo">Grandma, thanks for everything</string>
+    <string name="frasevoo">Thanks grandpa for everything</string>
+    <string name="fraseIrma">Little sister I will take care of you always</string>
+    <string name="fraseIrmao">Little brother I will take care of you always</string>
+    <string name="fraseNao">sorry but I don\'t know you</string>
+    <string name="fraseDani">Do you want to date me Dani?</string>
+    <string name="analizar">To analyze</string>
+    <string name="msgErro">Error, you forgot to enter your name!!!</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nome</string>
+    <string name="dNome">Digite o seu primeiro nome</string>
+    <string name="fraseMae">Mãe obrigado por tudo</string>
+    <string name="fraseVo">Vó obrigado por tudo</string>
+    <string name="frasevoo">Vô obrigado por tudo</string>
+    <string name="fraseIrma">Irmãzinha eu vou cuidar de você sempre</string>
+    <string name="fraseIrmao">Irmãozinho eu vou cuidar de você sempre</string>
+    <string name="fraseNao">desculpa mas eu não te conheço</string>
+    <string name="fraseDani">você quer namorar comigo Dani?</string>
+    <string name="analizar">Analizar</string>
+    <string name="msgErro">Erro você esqueceu de digitar o seu nome!!!</string>
+</resources>
