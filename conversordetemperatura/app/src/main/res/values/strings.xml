@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">temperature converter</string>
+    <string name="tituloCpF">Celsius to Fahrenheit</string>
+    <string name="tituloCpK">Celsius to Kelvin</string>
+    <string name="tituloFpC">Fahrenheit to Celsius</string>
+    <string name="tituloFpK">Fahrenheit to Kelvin</string>
+    <string name="tituloKpC">Kelvin to Celsius</string>
+    <string name="tituloKpF">Kelvin to Fahrenheit</string>
+    <string name="simboloCelsus">°C</string>
+    <string name="simbolofahrenheit">°F</string>
+    <string name="simbolloKelvin">K</string>
+    <string name="voltar">to go back</string>
+    <string name="calcular">calculate</string>
+    <string name="formula">formula</string>
+    <string name="zero">0</string>
+    <string name="sensacao">sensation</string>
+    <string name="frio">cold</string>
+    <string name="erro">Error you did not enter the temperature</string>
+    <string name="imgFrio">Image of cold</string>
+    <string name="calor">heat</string>
+    <string name="imgCalor">Heat Image</string>
+    <string name="agradavel">Pleasant</string>
+    <string name="imgAgradavel">nice image</string>
+    <string name="formulaCpF">* 9 / 5 + 32 =</string>
+    <string name="formulaCpK">+ 273.15 =</string>
+</resources>

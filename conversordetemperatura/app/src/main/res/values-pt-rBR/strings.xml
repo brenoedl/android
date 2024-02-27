@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">conversor de temperatura</string>
+    <string name="tituloCpF">Celsius para fahrenheit</string>
+    <string name="tituloCpK">Celsius para Kelvin</string>
+    <string name="tituloFpC">Fahrenheit para Celsius</string>
+    <string name="tituloFpK">Fahrenheit para Kelvin</string>
+    <string name="tituloKpC">Kelvin para Celsius</string>
+    <string name="tituloKpF">Kelvin para Fahrenheit</string>
+    <string name="simboloCelsus">°C</string>
+    <string name="simbolofahrenheit">°F</string>
+    <string name="simbolloKelvin">K</string>
+    <string name="voltar">voltar</string>
+    <string name="calcular">calcular</string>
+    <string name="formula">fórmula</string>
+    <string name="zero">0</string>
+    <string name="sensacao">sensação</string>
+    <string name="frio">frio</string>
+    <string name="erro">Erro você não digitou a temperatura</string>
+    <string name="imgFrio">Imagem de frio</string>
+    <string name="calor">calor</string>
+    <string name="imgCalor">Imagem de calor</string>
+    <string name="agradavel">Agradável</string>
+    <string name="imgAgradavel">imagem de agradável</string>
+    <string name="formulaCpF">" * 9 / 5 + 32 = "</string>
+    <string name="formulaCpK">" + 273,15 = "</string>
+</resources>
