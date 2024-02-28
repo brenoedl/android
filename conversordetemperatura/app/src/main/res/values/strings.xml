@@ -21,6 +21,10 @@
     <string name="imgCalor">Heat Image</string>
     <string name="agradavel">Pleasant</string>
     <string name="imgAgradavel">nice image</string>
-    <string name="formulaCpF">* 9 / 5 + 32 =</string>
-    <string name="formulaCpK">+ 273.15 =</string>
+    <string name="formulaCpF"> * 9 / 5 + 32 = </string>
+    <string name="formulaCpK"> + 273.15 = </string>
+    <string name="formulaFpC">" - 32) * 5 / 9 = "</string>
+    <string name="formulaFpK"> − 32) * 5 / 9 + 273,15 = </string>
+    <string name="formulaKpC"> - 273.15 = </string>
+    <string name="formulaKpF"> − 273,15) * 9 / 5 + 32 = </string>
 </resources>

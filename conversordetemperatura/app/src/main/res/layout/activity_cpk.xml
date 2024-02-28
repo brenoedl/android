@@ -4,48 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityCpF">
+    tools:context=".ActivityCpK">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/tituloCpF"
+        android:text="@string/tituloCpK"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/layTudo1"
+        app:layout_constraintBottom_toTopOf="@+id/layTudo2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/layTudo1"
+        android:id="@+id/layTudo2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnVoltar1"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <LinearLayout
-            android:id="@+id/layDados1"
+            android:id="@+id/layDados2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/simboloCelsus"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTemperatura1"
+                android:id="@+id/editTemperatura2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -53,67 +53,70 @@
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/btnCalcular1"
+                android:id="@+id/btnCalcular2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/botos"
                 android:onClick="calcular"
-                android:text="@string/calcular" />
+                android:text="@string/calcular"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layResult1"
+            android:id="@+id/layResult2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/formula"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtFormula1"
+                android:id="@+id/txtFormula2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/zero"
                 android:textSize="38sp" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sensacao"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtSensacao1"
+                android:id="@+id/txtSensacao2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/frio"
                 android:textSize="38sp" />
 
             <ImageView
-                android:id="@+id/imgSensacao1"
+                android:id="@+id/imgSensacao2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/imgFrio"
                 app:srcCompat="@drawable/img_frio" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnVoltar1"
+        android:id="@+id/btnVoltar2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/botos"
         android:onClick="voltar"
         android:text="@string/voltar"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layTudo1" />
+        app:layout_constraintTop_toBottomOf="@+id/layTudo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
