@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class ActivityFpC extends AppCompatActivity {
+public class ActivityFpK extends AppCompatActivity {
     EditText fahrenheit;
     LinearLayout layResult;
     TextView formula, semsacao;
@@ -22,12 +22,12 @@ public class ActivityFpC extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fpc);
-        fahrenheit = findViewById(R.id.editTemperatura3);
-        layResult = findViewById(R.id.layResult3);
-        formula = findViewById(R.id.txtFormula3);
-        semsacao = findViewById(R.id.txtSensacao3);
-        img = findViewById(R.id.imgSensacao3);
+        setContentView(R.layout.activity_fpk);
+        fahrenheit = findViewById(R.id.editTemperatura4);
+        layResult = findViewById(R.id.layResult4);
+        formula = findViewById(R.id.txtFormula4);
+        semsacao = findViewById(R.id.txtSensacao4);
+        img = findViewById(R.id.imgSensacao4);
         imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         layResult.setVisibility(View.INVISIBLE);
     }
@@ -42,14 +42,14 @@ public class ActivityFpC extends AppCompatActivity {
             layResult.setVisibility(View.VISIBLE);
             imm.hideSoftInputFromWindow(fahrenheit.getWindowToken(), 0);
             float f = Float.parseFloat(fahrenheit.getText().toString().trim());
-            float c = (f - 32) * 5 / 9;
-            String form = "(" + f + getString(R.string.simbolofahrenheit) + getString(R.string.formulaFpC) + c + getString(R.string.simboloCelsus);
+            float k = (f - 32) * 5 / 9 + 273.15f;
+            String form = "(" + f + getString(R.string.simbolofahrenheit) + getString(R.string.formulaFpK) + k + getString(R.string.simbolloKelvin);
             formula.setText(form);
-            if (c <= 22.0){
+            if (k <= 295.15){
                 semsacao.setText(getString(R.string.frio));
                 img.setImageResource(R.drawable.img_frio);
                 img.setContentDescription(getString(R.string.imgFrio));
-            }else if (c <= 30.0){
+            }else if (k <= 303.15){
                 semsacao.setText(getString(R.string.agradavel));
                 img.setImageResource(R.drawable.img_agradavel);
                 img.setContentDescription(getString(R.string.imgAgradavel));

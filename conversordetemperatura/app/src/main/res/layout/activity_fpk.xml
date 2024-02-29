@@ -4,48 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityFpC">
+    tools:context=".ActivityFpK">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/tituloFpC"
+        android:text="@string/tituloFpK"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/layTudo3"
+        app:layout_constraintBottom_toTopOf="@+id/layTudo4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/layTudo3"
+        android:id="@+id/layTudo4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnVoltar3"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <LinearLayout
-            android:id="@+id/layDados3"
+            android:id="@+id/layDados4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/simbolofahrenheit"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTemperatura3"
+                android:id="@+id/editTemperatura4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -53,7 +53,7 @@
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/btnCalcular3"
+                android:id="@+id/btnCalcular4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/botos"
@@ -63,41 +63,41 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layResult3"
+            android:id="@+id/layResult4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/formula"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtFormula3"
+                android:id="@+id/txtFormula4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/zero"
                 android:textSize="38sp" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/textView17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sensacao"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtSensacao3"
+                android:id="@+id/txtSensacao4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/frio"
                 android:textSize="38sp" />
 
             <ImageView
-                android:id="@+id/imgSensacao3"
+                android:id="@+id/imgSensacao4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/imgFrio"
@@ -106,7 +106,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnVoltar3"
+        android:id="@+id/btnVoltar4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -117,6 +117,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layTudo3" />
+        app:layout_constraintTop_toBottomOf="@+id/layTudo4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
