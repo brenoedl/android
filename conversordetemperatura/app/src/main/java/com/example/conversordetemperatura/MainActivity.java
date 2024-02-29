@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcFpC(View view) {
+        tela = new Intent(getApplicationContext(), ActivityFpC.class);
+        startActivity(tela);
     }
 
     public void calcFpK(View view) {
