@@ -36,8 +36,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcKpC(View view) {
+        tela = new Intent(getApplicationContext(), ActivityKpC.class);
+        startActivity(tela);
     }
 
     public void calcKpF(View view) {
+        tela = new Intent(getApplicationContext(), ActivityKpF.class);
+        startActivity(tela);
     }
 }

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ConversorDeTemperatura"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityKpC"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityKpF"
+            android:exported="false" />
+        <activity
             android:name=".ActivityFpK"
             android:exported="false" />
         <activity
