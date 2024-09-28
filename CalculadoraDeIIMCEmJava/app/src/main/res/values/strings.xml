@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BMI Calculator In Java</string>
+    <string name="infoP">Enter your weight (kg)</string>
+    <string name="infoA">Enter your height (meter and cm)</string>
+    <string name="calcIMC">Calculate BMI</string>
+    <string name="msg_imc">Your BMI is</string>
+    <string name="msg_bp">Low weight</string>
+    <string name="msg_pn">Normal weight</string>
+    <string name="msg_s">Overweight</string>
+    <string name="msg_og1">Obesity (Grade I)</string>
+    <string name="msg_og2">Severe Obesity (Grade II)</string>
+    <string name="msg_og3">Morbid Obesity (Grade III)</string>
+    <string name="msg_ep">Enter your weight</string>
+    <string name="msg_ea">Enter your height</string>
+    <string name="t_limpar">Clear data</string>
+</resources>
