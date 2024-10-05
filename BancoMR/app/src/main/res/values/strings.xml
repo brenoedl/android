@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MR Bankv</string>
+    <string name="p_sal">Balance</string>
+    <string name="p_fat">Invoice</string>
+    <string name="p_pou">Savings</string>
+    <string name="p_trans">Transfer</string>
+    <string name="titulo_sal">Available balance</string>
+    <string name="valor_sal">R$ 1500,00</string>
+    <string name="titulo_fat">Invoice Summary</string>
+    <string name="f_venci">Expiration date: 02/15/2029</string>
+    <string name="f_sal_p">Main balance: R$500.00</string>
+    <string name="f_pagar">Pay invoices</string>
+    <string name="p_para">For whom:</string>
+    <string name="p_valor">Value:</string>
+    <string name="titulo_pou">total value</string>
+    <string name="valor_pou">R$ 5000.00</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Faturas">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/barFaturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/blue"
+            app:title="@string/p_fat"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_voltar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_fat"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+        <com.vinaygaba.creditcardview.CreditCardView
+            android:id="@+id/cartaoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:backgroundTint="@color/black"
+            android:layout_margin="10dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f_venci"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_sal_p"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/f_pagar"
+            android:backgroundTint="@color/blue"
+            android:layout_margin="10dp"
+            android:padding="18dp"/>
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+</ScrollView>

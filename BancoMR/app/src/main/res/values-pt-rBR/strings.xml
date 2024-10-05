@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Banco MR</string>
+    <string name="p_sal">Saldo</string>
+    <string name="p_fat">Fatura</string>
+    <string name="p_pou">Poupança</string>
+    <string name="p_trans">Transferência</string>
+    <string name="titulo_sal">Saldo Disponível</string>
+    <string name="valor_sal">R$ 1500,00</string>
+    <string name="titulo_fat">Resumo das Faturas</string>
+    <string name="f_venci">data de vencimento: 15/02/2029</string>
+    <string name="f_sal_p">Saldo principal: R$500,00</string>
+    <string name="f_pagar">Pagar faturas</string>
+    <string name="p_para">Para:</string>
+    <string name="p_valor">Valor:</string>
+    <string name="titulo_pou">valor total</string>
+    <string name="valor_pou">R$ 5000,00</string>
+</resources>
