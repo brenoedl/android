@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloco de Notas</string>
+    <string name="rint">coloque a sua anotação</string>
+    <string name="erro_anotaccao">Preencha a anotação</string>
+    <string name="msg_sucessp">Anotação salva com sucesso</string>
+</resources>
