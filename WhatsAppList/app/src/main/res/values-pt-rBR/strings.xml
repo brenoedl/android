@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WhatsApp List</string>
+    <string name="nome_m1">Keaba</string>
+    <string name="nome_m2">Kasor</string>
+    <string name="nome_m3">Vugucey</string>
+    <string name="nome_m4">Peati</string>
+    <string name="nome_m5">Clugum</string>
+    <string name="nome_m6">Royan</string>
+    <string name="nome_m7">Zelou</string>
+    <string name="nome_f1">Haxiocol</string>
+    <string name="nome_f2">Wihuote</string>
+    <string name="nnme_f3">Pofos</string>
+    <string name="nome_f4">Covoti</string>
+    <string name="nome_f5">Foukica</string>
+    <string name="nome_f6">Toealsia</string>
+    <string name="nome_f7">Yargfea</string>
+    <string name="frase1">"Eu não falhei. Apenas encontrei 10.000 maneiras que não funcionam.  "</string>
+    <string name="frase2">"O seu problema não é o problema. A sua reação é o problema.  "</string>
+    <string name="frase3">"Dificuldades reais podem ser superadas; apenas as imaginárias são insuperáveis.  "</string>
+    <string name="frase4">A falha é o tempero que dá ao sucesso o seu .</string>
+    <string name="frase5">"Não se pode acreditar que é possível ser feliz procurando a infelicidade alheia.  "</string>
+    <string name="frase6">"Todo progresso ocorre fora da zona de conforto."</string>
+    <string name="frase7">"O ser capaz mora perto da necessidade."</string>
+    <string name="msgTC">"Contato: "</string>
+</resources>

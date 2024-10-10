@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WhatsApp List</string>
+    <string name="nome_m1">Keaba</string>
+    <string name="nome_m2">Kasor</string>
+    <string name="nome_m3">Vugucey</string>
+    <string name="nome_m4">Peati</string>
+    <string name="nome_m5">Clugum</string>
+    <string name="nome_m6">Royan</string>
+    <string name="nome_m7">Zelou</string>
+    <string name="nome_f1">Haxiocol</string>
+    <string name="nome_f2">Wihuote</string>
+    <string name="nnme_f3">Pofos</string>
+    <string name="nome_f4">Covoti</string>
+    <string name="nome_f5">Foukica</string>
+    <string name="nome_f6">Toealsia</string>
+    <string name="nome_f7">Yargfea</string>
+    <string name="frase1">I didn\'t fail. I just found 10,000 ways that don\'t work.</string>
+    <string name="frase2">Your problem is not the problem. Your reaction is the problem.</string>
+    <string name="frase3">Real difficulties can be overcome; only imaginary ones are insurmountable.</string>
+    <string name="frase4">Failure is the spice that gives success its flavor.</string>
+    <string name="frase5">One cannot believe that it is possible to be happy by seeking out other people\'s unhappiness.</string>
+    <string name="frase6">All progress occurs outside the comfort zone.</string>
+    <string name="frase7">The capable being lives close to the need.</string>
+    <string name="msgTC">Contact:</string>
+</resources>
