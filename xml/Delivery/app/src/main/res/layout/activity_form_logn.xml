@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white"
+        tools:context=".FormLogin">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email"
+            tools:ignore="VisualLintTextFieldSize"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_shape"/>
+
+        <EditText
+            android:id="@+id/etSenhaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:autofillHints="password"
+            android:inputType="numberPassword"
+            android:hint="@string/hint_senha"
+            tools:ignore="VisualLintTextFieldSize"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_shape"/>
+
+        <TextView
+            android:id="@+id/txtMensagemErro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/bt_entrar"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:backgroundTint="@color/red"/>
+
+        <TextView
+            android:id="@+id/txtCriarConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/frase_criar_conta"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/pbEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:indeterminateTint="@color/red"
+            android:visibility="invisible"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

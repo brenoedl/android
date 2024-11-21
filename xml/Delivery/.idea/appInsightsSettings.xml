@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.brenoedl.delivery" />
+                  <option name="mobileSdkAppId" value="1:67865641841:android:881fc1a1002847fce4ecd0" />
+                  <option name="projectId" value="delivery-3b78e" />
+                  <option name="projectNumber" value="67865641841" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

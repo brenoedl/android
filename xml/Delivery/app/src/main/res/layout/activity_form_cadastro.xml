@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white"
+        tools:context=".FormCadastro">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civFotoUsuario"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="15dp"
+            android:text="@string/bt_selecionar_foto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/gray"/>
+
+        <EditText
+            android:id="@+id/etNomeCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:autofillHints="name"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_nome"
+            tools:ignore="VisualLintTextFieldSize"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_shape"/>
+
+        <EditText
+            android:id="@+id/etEmailCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email"
+            tools:ignore="VisualLintTextFieldSize"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_shape"/>
+
+        <EditText
+            android:id="@+id/etSenhaCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:autofillHints="password"
+            android:inputType="numberPassword"
+            android:hint="@string/hint_senha"
+            tools:ignore="VisualLintTextFieldSize"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_shape"/>
+
+        <TextView
+            android:id="@+id/txtMensagemErro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/bt_cadastrar"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:backgroundTint="@color/red"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
