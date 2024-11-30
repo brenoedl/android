@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLogin">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/etEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_email"/>
+
+    <EditText
+        android:id="@+id/etSenhaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:autofillHints="password"
+        android:inputType="numberPassword"
+        android:hint="@string/hint_senha"/>
+
+    <TextView
+        android:id="@+id/tvMensagemErroLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:textStyle="bold"
+        android:text="@string/bt_entrar"/>
+
+    <TextView
+        android:id="@+id/tvCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/frase_criar_conta"/>
+
+    <ProgressBar
+        android:id="@+id/pbLogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/red"
+        android:visibility="invisible"/>
+
+</LinearLayout>
