@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#FF000000</color>
-    <color name="gray">#DEDEDE</color>
-    <color name="dark_gray">#AAAAAA</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="red">#FF0000</color>
-    <color name="dark_red">#AA0000</color>
-</resources>
