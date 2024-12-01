@@ -26,6 +26,7 @@
         android:textSize="18sp"
         android:padding="15dp"
         android:maxLines="1"
+        android:background="@drawable/edit_text_shape"
         android:autofillHints="emailAddress"
         android:inputType="textEmailAddress"
         android:hint="@string/hint_email"/>
@@ -40,6 +41,7 @@
         android:textSize="18sp"
         android:padding="15dp"
         android:maxLines="1"
+        android:background="@drawable/edit_text_shape"
         android:autofillHints="password"
         android:inputType="numberPassword"
         android:hint="@string/hint_senha"/>
