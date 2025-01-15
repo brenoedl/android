@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Delivery</string>
+    <string name="logo_app">logo app</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_nome">Nome</string>
+    <string name="bt_entrar">Entrar</string>
+    <string name="frase_criar_conta">Crie uma conta clicando aqui</string>
+    <string name="foto_usuario">foto do usuário</string>
+    <string name="bt_selecionar_foto">Selecione uma foto</string>
+    <string name="bt_cadastrar">Cadastrar</string>
+    <string name="erro_campo">Preencha todos os campos</string>
+    <string name="erro_senha_pequena">Coloque uma senha com no mínimo 6 caracteres!</string>
+    <string name="erro_email">E-mail inválido!</string>
+    <string name="erro_login">Erro ao logar usuário!</string>
+    <string name="erro_internet">Sem conexão com a internet!</string>
+    <string name="erro_conta_duplicada">Esta conta já foi cadastrada!</string>
+    <string name="erro_cadastro">Erro ao cadastrar o usuário!</string>
+    <string name="sucesso_cadastro">Cadastro realizado com sucesso!</string>
+    <string name="bt_ok">Ok</string>
+    <string name="bt_finalizar_pedido">finalizar pedido</string>
+    <string name="valor_unitario">valor unitário</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_pedidos">Pedidos</string>
+    <string name="title_sair">Sair da conta</string>
+    <string name="bt_editar_perfil">editar perfil</string>
+    <string name="bt_atualizar_dados">atualizar dados</string>
+</resources>

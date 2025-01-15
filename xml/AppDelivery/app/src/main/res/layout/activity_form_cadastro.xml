@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FormCadastro">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civFotoUsuarioCad"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@color/black"
+            android:contentDescription="@string/foto_usuario"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btSelecionarFotoCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/transparent"
+            android:text="@string/bt_selecionar_foto"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/etnomeCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_nome"
+            android:padding="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_shepe"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/etEmailCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email"
+            android:padding="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_shepe"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/etSenhaCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:inputType="numberPassword"
+            android:hint="@string/hint_senha"
+            android:padding="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_shepe"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tvMensagemErroCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"/>
+
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="15dp"
+            android:text="@string/bt_cadastrar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:enabled="false"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
