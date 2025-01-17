@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("titulo", listaFilme.get(position).getTitulo());
                 intent.putExtra("descricao", listaFilme.get(position).getDescricao());
                 intent.putExtra("elenco", listaFilme.get(position).getElenco());
-                intent.putExtra("trailer", listaFilme.get(position).getTrailer());
+                intent.putExtra("trailer", listaFilme.get(position).getVideo());
                 startActivity(intent);
             }
 

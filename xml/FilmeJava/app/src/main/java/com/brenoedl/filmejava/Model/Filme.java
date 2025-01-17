@@ -6,16 +6,6 @@ public class Filme {
     private String descricao;
     private String elenco;
     private String video;
-    private String trailer;
-
-    public String getTrailer() {
-        return trailer;
-    }
-
-    public void setTrailer(String trailer) {
-        this.trailer = trailer;
-    }
-
     public String getCapa() {
         return capa;
     }
