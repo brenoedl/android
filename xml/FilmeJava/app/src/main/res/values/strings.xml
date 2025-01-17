@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Filme Java</string>
+    <string name="nome_filme">Nome do Filme</string>
+    <string name="descricao_filme">Descrição do filme</string>
+    <string name="elenco">elenco</string>
+</resources>
