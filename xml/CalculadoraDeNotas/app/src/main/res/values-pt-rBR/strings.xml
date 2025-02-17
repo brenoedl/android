@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora De Notas</string>
+    <string name="nota1">Nota 1</string>
+    <string name="nota2">Nota 2</string>
+    <string name="nota3">Nota 3</string>
+    <string name="nota4">Nota 4</string>
+    <string name="faltas">Número de faltas</string>
+    <string name="msgRF">Aluno foi reprovado por faltas</string>
+    <string name="msgRN">Aluno foi reprovado por nota</string>
+    <string name="msgA">Aluno foi aprovado</string>
+    <string name="msgMF">Média final</string>
+    <string name="calcular">Calcular</string>
+    <string name="erro">Digite um número</string>
+</resources>
