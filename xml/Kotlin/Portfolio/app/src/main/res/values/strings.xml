@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="nome_completo">Breno Emanuel</string>
+    <string name="descricao_prefil">Breno Emanuel is a student of Curso em Vídeo, Estudonauta and Stack Mobile. He is a junior Android developer with an unparalleled passion for creating innovative digital experiences. With over two years of experience developing mobile applications, he brings with him a deep understanding of the Android ecosystem and a relentless dedication to technical excellence.
+\n\n\n
+        <b>Skills</b>
+\n\n\n
+        <b>Android Development:</b> An expert in Java and Kotlin, Breno has a deep understanding of native Android development, delivering robust and efficient applications.
+\n\n\n
+        <b>Software Architecture:</b> Experienced in implementing modern architectures such as MVVM, Clean Architecture and Jetpack Compose, ensuring modular and maintainable code.
+\n\n\n
+        <b>Automated Testing:</b> A staunch advocate of software quality, Breno implements automated unit and UI tests to ensure the stability and reliability of each application.</string>
+    <string name="bt_projjetos">Projects</string>
+    <string name="bt_coontato">Contacts</string>
+    <string name="txt_projeto_barbearia">barber shop project</string>
+    <string name="txt_projeto_marcenaria">carpentry project</string>
+    <string name="txt_projeto_pizzaria">pizzeria project</string>
+    <string name="bt_detalhes">Project details</string>
+    <string name="txt_tellefone">+55 (14) 99146–7533</string>
+    <string name="txt_email">brenoedl15@gmail.com</string>
+</resources>

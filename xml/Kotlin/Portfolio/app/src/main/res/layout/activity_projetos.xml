@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Projetos">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbProjetos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        app:title="@string/bt_projjetos"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_voltar"/>
+
+    <ImageView
+        android:id="@+id/ivProjetoBarbearia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbProjetos"
+        app:srcCompat="@drawable/projeto_barbearia" />
+
+    <TextView
+        android:id="@+id/tvProjetoBarbearia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_projeto_barbearia"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivProjetoBarbearia"
+        app:layout_constraintTop_toBottomOf="@+id/tbProjetos" />
+
+    <Button
+        android:id="@+id/btProjetoBarbearia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bt_detalhes"
+        android:backgroundTint="@color/red"
+        app:layout_constraintStart_toEndOf="@+id/ivProjetoBarbearia"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjetoBarbearia" />
+
+
+    <ImageView
+        android:id="@+id/ivProjetoMarcenaria"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProjetoBarbearia"
+        app:srcCompat="@drawable/projeto_marcenaria" />
+
+    <TextView
+        android:id="@+id/tvProjetoMarcenaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_projeto_marcenaria"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivProjetoBarbearia"
+        app:layout_constraintTop_toBottomOf="@+id/btProjetoBarbearia" />
+
+    <Button
+        android:id="@+id/btProjetoMarcenaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bt_detalhes"
+        android:backgroundTint="@color/red"
+        app:layout_constraintStart_toEndOf="@+id/ivProjetoBarbearia"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjetoMarcenaria"/>
+
+    <ImageView
+        android:id="@+id/ivProjetoPizzaria"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProjetoMarcenaria"
+        app:srcCompat="@drawable/projeto_pizzaria" />
+
+    <TextView
+        android:id="@+id/tvProjetoPizzaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_projeto_pizzaria"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivProjetoPizzaria"
+        app:layout_constraintTop_toBottomOf="@+id/btProjetoMarcenaria" />
+
+    <Button
+        android:id="@+id/btProjetoPizzaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bt_detalhes"
+        android:backgroundTint="@color/red"
+        app:layout_constraintStart_toEndOf="@+id/ivProjetoPizzaria"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjetoPizzaria" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

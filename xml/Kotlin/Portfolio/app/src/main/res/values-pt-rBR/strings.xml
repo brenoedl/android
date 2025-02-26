@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="nome_completo">Breno Emanuel</string>
+    <string name="descricao_prefil">Breno Emanuel é um aluno do Curso em Vídeo, Estudonauta e Stack Mobile. É um desenvolvedor Android júnior com uma paixão inigualável pela criação de experiências digitais inovadoras. Com mais de dois anos de experiência no desenvolvimento de aplicativos móveis, ela traz consigo um profundo entendimento do ecossistema Android e uma dedicação incansável à excelência técnica.
+\n\n\n
+        <b>Habilidades</b>
+\n\n\n
+        <b>Desenvolvimento Android:</b> Especialista em Java e Kotlin, Bremo possui uma profunda compreensão do desenvolvimento Android nativo, entregando aplicativos robustos e eficientes.
+\n\n\n
+        <b>Arquitetura de Software:</b> Experiente na implementação de arquiteturas modernas como MVVM, Clean Architecture e Jetpack Compose, garantindo código modular e de fácil manutenção.
+\n\n\n
+        <b>Testes Automatizados:</b> Firme defensor da qualidade do software, Breno implementa testes automatizados de unidade e UI para garantir a estabilidade e a confiabilidade de cada aplicativo.</string>
+    <string name="bt_projjetos">Projetos</string>
+    <string name="bt_coontato">Contatos</string>
+    <string name="txt_projeto_barbearia">projeto barbearia</string>
+    <string name="txt_projeto_marcenaria">projeto marcenaria</string>
+    <string name="txt_projeto_pizzaria">projeto pizzaria</string>
+    <string name="bt_detalhes">Detalhes do projeto</string>
+    <string name="txt_tellefone">+55 (14) 99146–7533</string>
+    <string name="txt_email">brenoedl15@gmail.com</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Portfolio" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+    <style name="telaContatos" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/dark_green</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="telaProjetos" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.Portfolio" parent="Base.Theme.Portfolio" />
+    <style name="Theme.telaContatos" parent="telaContatos"/>
+    <style name="Theme.telaProjetos" parent="telaProjetos"/>
+</resources>
