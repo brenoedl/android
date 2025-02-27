@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora De IIMC</string>
+    <string name="infoP">Informe o seu peso (Kg)</string>
+    <string name="infoA">Informe a sua altura (metro e cm)</string>
+    <string name="calcIMC">Calcular IMC</string>
+    <string name="msg_imc">"Seu IMC é de "</string>
+    <string name="msg_bp">Baixo peso</string>
+    <string name="msg_pn">Peso normal</string>
+    <string name="msg_s">Sobrepeso</string>
+    <string name="msg_og1">Obesidade (Grau I)</string>
+    <string name="msg_og2">Obesidade Severa (Grau II)</string>
+    <string name="msg_og3">Obesidade Mórbida (Grau III)</string>
+    <string name="msg_ep">Digite o seu peso</string>
+    <string name="msg_ea">Digite a sua altura</string>
+    <string name="t_limpar">Limpar dados</string>
+</resources>
