@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cores</string>
+    <string name="bt_trocar">Trocar cor de fundo</string>
+    <string name="msg_sucesso">Cor de fundo alterada com sucesso</string>
+</resources>

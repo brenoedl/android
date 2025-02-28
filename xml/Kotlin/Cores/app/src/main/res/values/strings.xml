@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Coloors</string>
+    <string name="bt_trocar">Change background color</string>
+    <string name="msg_sucesso">Background color changed successfully</string>
+</resources>
