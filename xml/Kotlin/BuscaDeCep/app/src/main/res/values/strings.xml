@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zip code search</string>
+    <string name="bt_buscas_cep">Zip code search</string>
+    <string name="txt_cep">Zip code</string>
+    <string name="txt_logradouro">Street</string>
+    <string name="txt_bairro">Neighborhood</string>
+    <string name="txt_cidade">City</string>
+    <string name="txt_estado">State</string>
+    <string name="msg_erro1">fill in the zip code</string>
+    <string name="msg_erro2">Invalid zip code</string>
+</resources>

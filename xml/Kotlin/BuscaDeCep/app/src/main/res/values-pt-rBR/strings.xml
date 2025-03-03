@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Busca De Cep</string>
+    <string name="bt_buscas_cep">buscar cep</string>
+    <string name="txt_cep">Cep</string>
+    <string name="txt_logradouro">Logradouro</string>
+    <string name="txt_bairro">Bairro</string>
+    <string name="txt_cidade">Cidade</string>
+    <string name="txt_estado">Estado</string>
+    <string name="msg_erro1">Digite um CEP</string>
+    <string name="msg_erro2">CEP inválido</string>
+</resources>
