@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App De Filme</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="txt_entrar">Entrar</string>
+    <string name="frase_ajuda">Precisa de ajuda?</string>
+    <string name="frase_inscrevase">Novo por aqui? Inscreva-se agora.</string>
+    <string name="frase_pronto">Tudo pronto para\nassistir?</string>
+    <string name="frase_informa">Informe seu email para criar ou acessar sua conta</string>
+    <string name="botton_vamos">Vamos lá</string>
+    <string name="erro_email1">E-mail é obrigatório</string>
+    <string name="erro_email2">E-mail inválido</string>
+    <string name="erro_conta">Conta já cadastrada</string>
+    <string name="frase_mundo">Um mundo de series e filmes ilimitados espera por você</string>
+    <string name="frase_criiar">Crie uma conta para saber mais sobre o nosso App de filme</string>
+    <string name="txt_ajuda">Ajuda</string>
+    <string name="erro_sanha1">A senha é obrigatória</string>
+    <string name="erro_senha2">Coloque uma senha com no mínimo 6 caracteres!</string>
+    <string name="botton_cadastrar">Cadastrar</string>
+    <string name="erro_cadastro">Erro ao cadastrar o usuário!</string>
+    <string name="msg_sucesso_cadastro">Cadastro realizado com sucesso!</string>
+    <string name="txt_info">Saiba mais</string>
+    <string name="txt_lista">Minha lista</string>
+    <string name="botton_Assistir">Assistir</string>
+    <string name="txt_series">Séries</string>
+    <string name="txt_filmes">Filmes</string>
+    <string name="txt_sair">Sair</string>
+</resources>
