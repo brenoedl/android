@@ -19,15 +19,16 @@ class FormLogin : AppCompatActivity() {
         binding.bEntrar.setOnClickListener {
             val email = binding.tietEmailLogin.text.toString().trim()
             val senha = binding.tietSenhaLogin.text.toString()
-            when {
-                email.isEmpty() -> {
-                    binding.tilEmailLogin.helperText = getString(R.string.erro_email1)
-                    binding.tilEmailLogin.boxStrokeColor = getColor(R.color.orange)
-                }
-                senha.isEmpty() -> {
-                    binding.tilSenhaLogin.helperText = getString(R.string.erro_sanha1)
-                    binding.tilSenhaLogin.boxStrokeColor = getColor(R.color.orange)
-                }
+
+            if(email.isEmpty()) {
+                binding.tilEmailLogin.helperText = getString(R.string.erro_email1)
+                binding.tilEmailLogin.boxStrokeColor = getColor(R.color.orange)
+            } else if(senha.isEmpty()) {
+                binding.tilSenhaLogin.helperText = getString(R.string.erro_sanha1)
+                binding.tilSenhaLogin.boxStrokeColor = getColor(R.color.orange)
+            }else {
+                binding.tilEmailLogin.helperText = ""
+                binding.tilSenhaLogin.helperText = ""
             }
         }
 
