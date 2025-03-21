@@ -12,5 +12,18 @@ class FormCadatro : AppCompatActivity() {
         binding = ActivityFormCadatroBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar!!.hide()
+        binding.tietEmailCadastro.requestFocus()
+
+        binding.btCadastrar.setOnClickListener {
+            val email = binding.tietEmailCadastro.text.toString()
+
+            if (email.isEmpty()) {
+                binding.tilEmailCadastro.helperText = getString(R.string.erro_email1)
+                binding.tilEmailCadastro.boxStrokeColor = getColor(R.color.red)
+            } else {
+                binding.tilEmailCadastro.helperText = ""
+                binding.tilEmailCadastro.boxStrokeColor = getColor(R.color.blue)
+            }
+        }
     }
 }
