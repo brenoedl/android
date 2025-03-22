@@ -51,4 +51,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(platform(libs.firebase.bom))
+    implementation(libs.firebasecommonktx)
+    implementation(libs.firebaseauth)
 }
