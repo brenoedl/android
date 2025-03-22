@@ -45,6 +45,8 @@ class FormCadatro : AppCompatActivity() {
                 Toast.makeText(this, getString(R.string.msg_sucesso_cadastro), Toast.LENGTH_SHORT).show()
                 binding.tilEmailCadastro.helperText = ""
                 binding.tilEmailCadastro.boxStrokeColor = getColor(R.color.blue)
+                binding.tilSenhaCadastro.helperText = ""
+                binding.tilSenhaCadastro.boxStrokeColor = getColor(R.color.blue)
             }else if (senha.isEmpty()) {
                 binding.tilSenhaCadastro.helperText = getString(R.string.erro_senha1)
                 binding.tilSenhaCadastro.boxStrokeColor = getColor(R.color.red)
