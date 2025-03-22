@@ -124,7 +124,7 @@ android:fillViewport="true">
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btCadastrar"
+            android:id="@+id/btVamosLa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -134,5 +134,18 @@ android:fillViewport="true">
             android:textColor="@color/white"
             android:textSize="18sp"
             android:backgroundTint="@color/red"/>
+
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="15dp"
+            android:text="@string/botton_cadastrar"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@color/red"
+            android:visibility="gone"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
