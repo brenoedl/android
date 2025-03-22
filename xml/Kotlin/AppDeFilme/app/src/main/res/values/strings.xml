@@ -7,13 +7,13 @@
     <string name="frase_ajuda">Precisa de ajuda?</string>
     <string name="frase_inscrevase">Novo por aqui? Inscreva-se agora.</string>
     <string name="frase_pronto">Tudo pronto para\nassistir?</string>
-    <string name="frase_informa">Informe seu email para criar ou acessar sua conta</string>
+    <string name="frase_informa">Informe seu email para criar ou acessar sua\nconta</string>
     <string name="botton_vamos">Vamos lá</string>
     <string name="erro_email1">E-mail é obrigatório</string>
     <string name="erro_email2">E-mail inválido</string>
     <string name="erro_conta">Conta já cadastrada</string>
-    <string name="frase_mundo">Um mundo de series e filmes ilimitados espera por você</string>
-    <string name="frase_criiar">Crie uma conta para saber mais sobre o nosso App de filme</string>
+    <string name="frase_mundo">Um mundo de series e filmes\nilimitados espera por você</string>
+    <string name="frase_criiar">Crie uma conta para saber\nmais sobre o nosso App de filme</string>
     <string name="txt_ajuda">Ajuda</string>
     <string name="erro_sanha1">A senha é obrigatória</string>
     <string name="erro_senha2">Coloque uma senha com no mínimo 6 caracteres!</string>
