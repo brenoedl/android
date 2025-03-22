@@ -15,7 +15,7 @@
     <string name="frase_mundo">Um mundo de series e filmes\nilimitados espera por você</string>
     <string name="frase_criiar">Crie uma conta para saber\nmais sobre o nosso App de filme</string>
     <string name="txt_ajuda">Ajuda</string>
-    <string name="erro_sanha1">A senha é obrigatória</string>
+    <string name="erro_senha1">A senha é obrigatória</string>
     <string name="erro_senha2">Coloque uma senha com no mínimo 6 caracteres!</string>
     <string name="botton_cadastrar">Cadastrar</string>
     <string name="erro_cadastro">Erro ao cadastrar o usuário!</string>
