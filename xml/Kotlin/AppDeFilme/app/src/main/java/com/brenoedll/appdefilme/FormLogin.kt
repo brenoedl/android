@@ -24,7 +24,7 @@ class FormLogin : AppCompatActivity() {
                 binding.tilEmailLogin.helperText = getString(R.string.erro_email1)
                 binding.tilEmailLogin.boxStrokeColor = getColor(R.color.orange)
             } else if(senha.isEmpty()) {
-                binding.tilSenhaLogin.helperText = getString(R.string.erro_sanha1)
+                binding.tilSenhaLogin.helperText = getString(R.string.erro_senha1)
                 binding.tilSenhaLogin.boxStrokeColor = getColor(R.color.orange)
             }else {
                 binding.tilEmailLogin.helperText = ""
