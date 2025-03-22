@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "370265435173",
+    "project_id": "app-de-filme-35b5a",
+    "storage_bucket": "app-de-filme-35b5a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370265435173:android:3c57326c6b418455ce23cc",
+        "android_client_info": {
+          "package_name": "com.brenoedll.appdefilme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7l302-Z_2F3XZPi46343IurcQOmsXnuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
