@@ -37,4 +37,8 @@ class FormLogin : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+    }
 }
