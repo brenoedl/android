@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppDeFilme"
         tools:targetApi="31">
         <activity
+            android:name=".TelaPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".FormCadatro"
             android:exported="false" />
         <activity
