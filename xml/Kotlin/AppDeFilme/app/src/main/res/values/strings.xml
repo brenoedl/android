@@ -28,4 +28,6 @@
     <string name="txt_filmes">Filmes</string>
     <string name="txt_sair">Sair</string>
     <string name="erro_internet">Sem conexão com a internet</string>
+    <string name="msg_sucesso_login">Login realizado com sucesso!</string>
+    <string name="msg_erro_login">Erro ao realizar login do usuário!</string>
 </resources>
