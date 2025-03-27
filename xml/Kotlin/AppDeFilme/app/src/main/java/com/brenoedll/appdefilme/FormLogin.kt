@@ -2,8 +2,10 @@ package com.brenoedll.appdefilme
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.brenoedll.appdefilme.databinding.ActivityFormLoginBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class FormLogin : AppCompatActivity() {
     private lateinit var binding: ActivityFormLoginBinding
@@ -27,8 +29,7 @@ class FormLogin : AppCompatActivity() {
                 binding.tilSenhaLogin.helperText = getString(R.string.erro_senha1)
                 binding.tilSenhaLogin.boxStrokeColor = getColor(R.color.orange)
             }else {
-                binding.tilEmailLogin.helperText = ""
-                binding.tilSenhaLogin.helperText = ""
+                autenticacaoUsuario(email, senha)
             }
         }
 
@@ -38,7 +39,33 @@ class FormLogin : AppCompatActivity() {
         }
     }
 
+    private fun autenticacaoUsuario(email: String, senha: String) {
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha).addOnCompleteListener { autenticacao ->
+            if (autenticacao.isSuccessful){
+                binding.tilEmailLogin.helperText = ""
+                binding.tilEmailLogin.boxStrokeColor = getColor(R.color.blue)
+                binding.tilSenhaLogin.helperText = ""
+                binding.tilSenhaLogin.boxStrokeColor = getColor(R.color.blue)
+                Toast.makeText(this, getString(R.string.msg_sucesso_login), Toast.LENGTH_SHORT).show()
+                navegarTelaPrincipal()
+            }
+        }.addOnFailureListener { error ->
+            Toast.makeText(this, getString(R.string.msg_erro_login), Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun navegarTelaPrincipal() {
+        val intent = Intent(this, TelaPrincipal::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     override fun onStart() {
         super.onStart()
+
+        val usuarioAtual = FirebaseAuth.getInstance().currentUser
+        if(usuarioAtual != null) {
+            navegarTelaPrincipal()
+        }
     }
 }
