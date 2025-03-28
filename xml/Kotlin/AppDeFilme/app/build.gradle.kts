@@ -53,4 +53,7 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebasecommonktx)
     implementation(libs.firebaseauth)
+
+    implementation(libs.retrofit)
+    implementation(libs.convertergson)
 }
