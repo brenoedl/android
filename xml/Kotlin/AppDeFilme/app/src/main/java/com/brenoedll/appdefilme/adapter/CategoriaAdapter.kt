@@ -1,11 +1,12 @@
 package com.brenoedll.appdefilme.adapter
 
 import android.content.Context
-import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.brenoedll.appdefilme.databinding.CategoriaItemBinding
 import com.brenoedll.appdefilme.model.Categoria
+import com.brenoedll.appdefilme.model.Filme
 
 class CategoriaAdapter(private val context: Context, private val listaCategoria: MutableList<Categoria>):
     RecyclerView.Adapter<CategoriaAdapter.CategoriaViewHolder>() {
@@ -22,11 +23,19 @@ class CategoriaAdapter(private val context: Context, private val listaCategoria:
         position: Int
     ) {
         holder.titulo.text = listaCategoria[position].titulo
+
+        val categoria = listaCategoria[position]
+
+        val adapterFilmes = FilmeAdapter(context, categoria.filmes)
+        holder.recyclerViewFilmes.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            holder.recyclerViewFilmes.setHasFixedSize(true)
+        holder.recyclerViewFilmes.adapter = adapterFilmes
     }
 
     override fun getItemCount() = listaCategoria.size
 
     inner class CategoriaViewHolder(binding: CategoriaItemBinding) : RecyclerView.ViewHolder(binding.root) {
         val titulo = binding.tvTituloCategoria
+        val recyclerViewFilmes = binding.rvFilmes
     }
 }
