@@ -1,3 +1,7 @@
 package com.brenoedll.appdefilme.model
 
-data class Filme(val capa: Int)
+import com.google.gson.annotations.SerializedName
+
+data class Filme(
+    @SerializedName("url_imagem") val capa: String? = null
+)

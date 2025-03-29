@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.brenoedll.appdefilme.databinding.FilmeItemBinding
 import com.brenoedll.appdefilme.model.Filme
+import com.bumptech.glide.Glide
 
 class FilmeAdapter(private val context: Context, private val listaFilmes: MutableList<Filme>) : RecyclerView.Adapter<FilmeAdapter.FilmeViewHolder>() {
     override fun onCreateViewHolder(
@@ -19,7 +20,7 @@ class FilmeAdapter(private val context: Context, private val listaFilmes: Mutabl
         holder: FilmeViewHolder,
         position: Int
     ) {
-        holder.capa.setImageResource(listaFilmes[position].capa)
+        Glide.with(context).load(listaFilmes[position].capa).centerCrop().into(holder.capa)
     }
 
     override fun getItemCount() = listaFilmes.size

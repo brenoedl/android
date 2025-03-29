@@ -1,3 +1,8 @@
 package com.brenoedll.appdefilme.model
 
-data class Categoria(val titulo: String? = null, val filmes: MutableList<Filme> = mutableListOf())
+import com.google.gson.annotations.SerializedName
+
+data class Categoria(
+    @SerializedName("titulo") val titulo: String? = null,
+    @SerializedName("capas") val filmes: MutableList<Filme> = mutableListOf()
+)

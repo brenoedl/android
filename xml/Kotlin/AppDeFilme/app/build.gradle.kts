@@ -56,4 +56,5 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.convertergson)
+    implementation(libs.glide)
 }

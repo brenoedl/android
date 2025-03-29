@@ -6,9 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.brenoedll.appdefilme.databinding.CategoriaItemBinding
 import com.brenoedll.appdefilme.model.Categoria
-import com.brenoedll.appdefilme.model.Filme
 
-class CategoriaAdapter(private val context: Context, private val listaCategoria: MutableList<Categoria>):
+class CategoriaAdapter(private val context: Context, val listaCategoria: MutableList<Categoria>):
     RecyclerView.Adapter<CategoriaAdapter.CategoriaViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -28,7 +27,7 @@ class CategoriaAdapter(private val context: Context, private val listaCategoria:
 
         val adapterFilmes = FilmeAdapter(context, categoria.filmes)
         holder.recyclerViewFilmes.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            holder.recyclerViewFilmes.setHasFixedSize(true)
+        holder.recyclerViewFilmes.setHasFixedSize(true)
         holder.recyclerViewFilmes.adapter = adapterFilmes
     }
 

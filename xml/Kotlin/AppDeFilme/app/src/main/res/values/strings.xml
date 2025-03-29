@@ -30,4 +30,5 @@
     <string name="erro_internet">Sem conexão com a internet</string>
     <string name="msg_sucesso_login">Login realizado com sucesso!</string>
     <string name="msg_erro_login">Erro ao realizar login do usuário!</string>
+    <string name="palavra_carregando">Carregando...</string>
 </resources>
