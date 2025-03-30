@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.brenoedll.appdefilme.adapter.CategoriaAdapter
@@ -67,7 +68,7 @@ class TelaPrincipal : AppCompatActivity() {
                 call: Call<Categorias?>,
                 t: Throwable
             ) {
-                TODO("Not yet implemented")
+                Toast.makeText(this@TelaPrincipal, "Erro na conexão", Toast.LENGTH_SHORT).show()
             }
         })
     }

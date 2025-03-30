@@ -1,8 +1,10 @@
 package com.brenoedll.appdefilme.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.brenoedll.appdefilme.DetalhesFilme
 import com.brenoedll.appdefilme.databinding.FilmeItemBinding
 import com.brenoedll.appdefilme.model.Filme
 import com.bumptech.glide.Glide
@@ -21,6 +23,14 @@ class FilmeAdapter(private val context: Context, private val listaFilmes: Mutabl
         position: Int
     ) {
         Glide.with(context).load(listaFilmes[position].capa).centerCrop().into(holder.capa)
+        holder.capa.setOnClickListener {
+            val intent = Intent(context, DetalhesFilme::class.java)
+            intent.putExtra("capa", listaFilmes[position].capa)
+            intent.putExtra("nome", listaFilmes[position].nome)
+            intent.putExtra("descricao", listaFilmes[position].descricao)
+            intent.putExtra("elenco", listaFilmes[position].elenco)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount() = listaFilmes.size
