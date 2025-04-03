@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bCadastrar.setOnClickListener {
+        binding.bCadastrarMain.setOnClickListener {
             val intent = Intent(this, CadastrarContatos::class.java)
             startActivity(intent)
         }

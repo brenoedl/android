@@ -10,10 +10,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white"
-        tools:context=".CadastrarContatos">
+        tools:context=".EditarContato">
 
         <EditText
-            android:id="@+id/etNome"
+            android:id="@+id/etNomeEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_nome"
@@ -25,7 +25,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <EditText
-            android:id="@+id/etSobrenome"
+            android:id="@+id/etSobrenomeEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_sobrenome"
@@ -37,7 +37,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <EditText
-            android:id="@+id/etIdade"
+            android:id="@+id/etIdadeEditar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/hint_idade"
@@ -50,7 +50,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <EditText
-            android:id="@+id/etTelefone"
+            android:id="@+id/etTelefoneEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_telefone"

@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/bCadastrar"
+        android:id="@+id/bCadastrarMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_cadastrar"
