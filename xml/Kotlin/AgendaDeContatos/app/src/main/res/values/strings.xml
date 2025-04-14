@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda De Contatos</string>
+    <string name="button_cadastrar">Cadastrar</string>
+    <string name="hint_nome">nome</string>
+    <string name="hint_sobrenome">sobrenome</string>
+    <string name="hint_idade">idade</string>
+    <string name="hint_telefone">telefone</string>
+    <string name="button_atualizar">atualizar</string>
+    <string name="button_excluir">excluir</string>
+    <string name="imagem_editar">imagem de editar</string>
+    <string name="imagem_excuiir">imagem de excuiir</string>
+</resources>
