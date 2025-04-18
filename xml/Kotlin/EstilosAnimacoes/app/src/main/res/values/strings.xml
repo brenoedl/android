@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Estilos Animações</string>
+    <string name="hint_emil">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="frase_cadastro">Não tem uma conta? Cadastre-se</string>
+</resources>

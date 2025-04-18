@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.meu_tema" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/aqua</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/purple</item>
+        <item name="android:navigationBarColor">@color/blue</item>
+    </style>
+    <style name="Theme.meu_tema" parent="Base.Theme.meu_tema" />
+</resources>
