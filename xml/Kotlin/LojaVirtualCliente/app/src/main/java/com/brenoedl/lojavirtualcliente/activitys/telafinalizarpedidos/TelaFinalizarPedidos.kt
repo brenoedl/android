@@ -35,10 +35,6 @@ class TelaFinalizarPedidos : AppCompatActivity() {
                 snackbar.setTextColor(getColor(R.color.white))
                 snackbar.show()
             } else {
-                val url = ""
-                val intent = CustomTabsIntent.Builder().build()
-                intent.launchUrl(this@TelaFinalizarPedidos, url.toUri())
-
             }
         }
     }
