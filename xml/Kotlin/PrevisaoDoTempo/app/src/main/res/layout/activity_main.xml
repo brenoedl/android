@@ -1,19 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/telaMain"
+        style="@style/Theme.TelaClaro"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Switch
+            android:id="@+id/sTema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/palavra_temperatura"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintTop_toBottomOf="@id/sTema"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvPaisCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frase_ppais_cidade"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvTemperatura"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/ivClima"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/clearsky"
+            app:layout_constraintTop_toBottomOf="@id/tvPaisCidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/app_name"/>
+
+        <View
+            android:id="@+id/vInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/comteiner_info_claro_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivClima" />
+
+        <TextView
+            android:id="@+id/tvTituloInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frase_ibfo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/vInfo"
+            app:layout_constraintStart_toStartOf="@id/vInfo"
+            app:layout_constraintEnd_toEndOf="@id/vInfo"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="60dp"/>
+
+        <TextView
+            android:id="@+id/tvInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_info1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvTituloInfo"
+            app:layout_constraintStart_toStartOf="@id/vInfo"
+            app:layout_constraintEnd_toStartOf="@id/tvInfo2"
+            app:layout_constraintBottom_toBottomOf="@id/vInfo"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_info2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvTituloInfo"
+            app:layout_constraintStart_toEndOf="@id/tvInfo1"
+            app:layout_constraintEnd_toEndOf="@id/vInfo"
+            app:layout_constraintBottom_toBottomOf="@id/vInfo"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="text"
+            android:hint="@string/hint_buscar"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/vInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btBuscar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="20dp"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_buscar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/dark_blue_600"
+            app:layout_constraintTop_toBottomOf="@id/vInfo"
+            app:layout_constraintStart_toEndOf="@id/etBuscar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="20dp"
+            android:padding="25dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbBuscar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/etBuscar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

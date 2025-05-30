@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <string name="app_name">Previsão Do Tempo</string>
+    <string name="palavra_temperatura">21°C</string>
+    <string name="frase_ppais_cidade">Ppais - Cidade</string>
+    <string name="frase_ibfo">Informações adicionais</string>
+    <string name="texto_info1">Clima\nCeú limpo\n\nUmidade\n50</string>
+    <string name="texto_info2">Temp Min\n18\n\nTemp Max\n30</string>
+    <string name="hint_buscar">Buscar cidade</string>
+    <string name="botao_buscar">Buscar</string>
 </resources>

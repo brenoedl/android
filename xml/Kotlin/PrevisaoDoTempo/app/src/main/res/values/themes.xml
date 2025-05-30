@@ -2,8 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PrevisaoDoTempo" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/dark_blue_300</item>
     </style>
-
     <style name="Theme.PrevisaoDoTempo" parent="Base.Theme.PrevisaoDoTempo" />
+
+    <style name="Base.Theme.TelaClaro" parent="Base.Theme.PrevisaoDoTempo" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dark_blue_300</item>
+    </style>
+    <style name="Theme.TelaClaro" parent="Base.Theme.TelaClaro" />
 </resources>
