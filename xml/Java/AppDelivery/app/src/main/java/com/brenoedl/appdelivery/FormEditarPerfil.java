@@ -8,6 +8,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,12 +19,13 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import java.util.Objects;
 import java.util.UUID;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class FormEditarPerfil extends AppCompatActivity {
-    private CircleImageView civFotoUsuarioAtualizar;;
+    private CircleImageView civFotoUsuarioAtualizar;
     private Button btSelecionarFotoAtualizar, btAtualizar;
     private EditText etnomeAtualizar;
     private Uri bSelecionarUri;
@@ -49,18 +51,7 @@ public class FormEditarPerfil extends AppCompatActivity {
         });
     }
 
-    private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
-        if (result.getResultCode() == RESULT_OK) {
-            Intent data = result.getData();
-            assert data != null;
-            bSelecionarUri = data.getData();
-            try {
-                civFotoUsuarioAtualizar.setImageURI(bSelecionarUri);
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-        }
-    });
+    private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), this::onActivityResult);
 
     private void selecionarFoto() {
         Intent intent = new Intent(Intent.ACTION_PICK);
@@ -75,7 +66,7 @@ public class FormEditarPerfil extends AppCompatActivity {
             reference.getDownloadUrl().addOnSuccessListener(uri -> {
                 String foto = uri.toString();
 
-                usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                usuarioID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
                 FirebaseFirestore bd = FirebaseFirestore.getInstance();
                 String nome = etnomeAtualizar.getText().toString().trim();
 
@@ -101,5 +92,18 @@ public class FormEditarPerfil extends AppCompatActivity {
         btAtualizar = findViewById(R.id.btAtualizar);
         imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 
+    }
+
+    private void onActivityResult(ActivityResult result) {
+        if (result.getResultCode() == RESULT_OK) {
+            Intent data = result.getData();
+            assert data != null;
+            bSelecionarUri = data.getData();
+            try {
+                civFotoUsuarioAtualizar.setImageURI(bSelecionarUri);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

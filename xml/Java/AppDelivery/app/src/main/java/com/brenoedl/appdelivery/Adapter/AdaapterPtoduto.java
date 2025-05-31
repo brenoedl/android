@@ -18,8 +18,8 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AdaapterPtoduto extends RecyclerView.Adapter<AdaapterPtoduto.ProdutoViewHolder> {
-    private Context context;
-    private List<Produto> produtoList;
+    private final Context context;
+    private final List<Produto> produtoList;
 
     public AdaapterPtoduto(Context context, List<Produto> produtoList) {
         this.context = context;
@@ -39,7 +39,6 @@ public class AdaapterPtoduto extends RecyclerView.Adapter<AdaapterPtoduto.Produt
         Glide.with(context).load(produtoList.get(position).getFoto()).into(holder.fotoProduto);
         holder.nomeProduto.setText(produtoList.get(position).getNome());
         holder.precoProduto.setText(produtoList.get(position).getPreco());
-        //holder.descricaoProduto.setText(produtoList.get(position).getDescricao());
     }
 
     @Override
@@ -47,18 +46,16 @@ public class AdaapterPtoduto extends RecyclerView.Adapter<AdaapterPtoduto.Produt
         return produtoList.size();
     }
 
-    public class ProdutoViewHolder extends RecyclerView.ViewHolder{
-        private CircleImageView fotoProduto;
-        private TextView nomeProduto;
-        private TextView precoProduto;
-        private TextView descricaoProduto;
+    public static class ProdutoViewHolder extends RecyclerView.ViewHolder{
+        private final CircleImageView fotoProduto;
+        private final TextView nomeProduto;
+        private final TextView precoProduto;
 
         public ProdutoViewHolder(@NonNull View itemView) {
             super(itemView);
             fotoProduto = itemView.findViewById(R.id.fotoProduto);
             nomeProduto = itemView.findViewById(R.id.nomeProduto);
             precoProduto = itemView.findViewById(R.id.precoProduto);
-            descricaoProduto = itemView.findViewById(R.id.tvDescricaoProduto);
         }
     }
 }

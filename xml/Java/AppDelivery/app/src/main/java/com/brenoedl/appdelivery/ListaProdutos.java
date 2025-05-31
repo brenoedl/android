@@ -28,17 +28,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaProdutos extends AppCompatActivity {
-    private RecyclerView rvProdutos;
     private AdaapterPtoduto adapterPtoduto;
     private List<Produto> produtoList;
-    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_produtos);
 
-        rvProdutos = findViewById(R.id.rvProdutos);
+        RecyclerView rvProdutos = findViewById(R.id.rvProdutos);
         produtoList = new ArrayList<>();
         adapterPtoduto = new AdaapterPtoduto(getApplicationContext(), produtoList);
         rvProdutos.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
@@ -69,7 +67,7 @@ public class ListaProdutos extends AppCompatActivity {
                 )
         );
 
-        db = FirebaseFirestore.getInstance();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("produtos").orderBy("nome").get().addOnCompleteListener(new OnCompleteListener<>() {
             @SuppressLint("NotifyDataSetChanged")
             @Override
