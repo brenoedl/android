@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "536219526895",
+    "project_id": "loja-virtual-712d4",
+    "storage_bucket": "loja-virtual-712d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536219526895:android:67f1710a1b7e28e122dd1a",
+        "android_client_info": {
+          "package_name": "com.brenoedl.lojavirtualcliente"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8YUhAUM2_C98lL89bvw4cCfeN1qiyUgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

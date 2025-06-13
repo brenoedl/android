@@ -4,13 +4,11 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.viewmodel.CreationExtras
 import com.brenoedl.lojavirtualcliente.R
 import com.brenoedl.lojavirtualcliente.activitys.telafinalizarpedidos.TelaFinalizarPedidos
 import com.brenoedl.lojavirtualcliente.databinding.ActivityDetalhesProdutoBinding
 import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
-import com.mercadopago.android.px.internal.features.express.slider.SplitPaymentHeaderAdapter
 
 class DetalhesProduto : AppCompatActivity() {
     private lateinit var binding: ActivityDetalhesProdutoBinding

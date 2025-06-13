@@ -4,11 +4,9 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.browser.customtabs.CustomTabsIntent
 import com.brenoedl.lojavirtualcliente.R
 import com.brenoedl.lojavirtualcliente.databinding.ActivityTelaFinalizarPedidosBinding
 import com.google.android.material.snackbar.Snackbar
-import androidx.core.net.toUri
 
 class TelaFinalizarPedidos : AppCompatActivity() {
     private lateinit var binding: ActivityTelaFinalizarPedidosBinding
