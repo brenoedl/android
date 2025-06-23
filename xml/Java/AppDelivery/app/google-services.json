@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1076402663992",
-    "project_id": "app-delivery-463220",
-    "storage_bucket": "app-delivery-463220.firebasestorage.app"
+    "project_number": "1069517190566",
+    "project_id": "app-delivery-463315",
+    "storage_bucket": "app-delivery-463315.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1076402663992:android:fa539ed05eb50a8f2e2ccd",
+        "mobilesdk_app_id": "1:1069517190566:android:21deae67f54233057b4b67",
         "android_client_info": {
           "package_name": "com.brenoedl.appdelivery"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCBk5bGkJ3D0NcIqN5lmb9rqPraAo6ZmlE"
+          "current_key": "AIzaSyA4H--NBUQiBy3QYXl0R4VFNvIaYA03mWw"
         }
       ],
       "services": {
