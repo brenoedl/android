@@ -119,7 +119,7 @@ public class FormCadastro extends AppCompatActivity {
                 reference.getDownloadUrl().addOnSuccessListener(uri -> {
                     String foto = uri.toString();
 
-                    usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                    usuarioID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
                     FirebaseFirestore bd = FirebaseFirestore.getInstance();
                     String nome = etNomeCad.getText().toString().trim();
                     Map<String, Object> usuarios = new HashMap<>();
