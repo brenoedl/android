@@ -38,6 +38,6 @@ class MainActivity : AppCompatActivity() {
         } else if (media < 5) {
             binding.tvResp.text = binding.root.context.getString(R.string.msgRN) + "\n" + binding.root.context.getString(R.string.msgMF) + " " + media
             binding.tvResp.setTextColor(getColor(R.color.red))
-            }
+        }
     }
 }
