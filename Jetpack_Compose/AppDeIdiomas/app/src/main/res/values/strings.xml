@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App De Idiomas</string>
+    <string name="idioma">Português (BR)</string>
+    <string name="descricao">Meu nome é </string>
+</resources>
