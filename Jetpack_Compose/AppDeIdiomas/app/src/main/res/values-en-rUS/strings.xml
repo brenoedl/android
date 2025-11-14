@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Language App</string>
+    <string name="idioma">English</string>
+    <string name="descricao">My name is Breno Emanuel and I am a mobile (Android), web, and desktop game (Windows) developer.</string>
+</resources>

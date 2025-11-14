@@ -28,18 +28,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.brenoedl.appdeidiomas.datasource.LanguagePreferences
 import com.brenoedl.appdeidiomas.ui.theme.Blue900
 import com.brenoedl.appdeidiomas.ui.theme.Gray900
 import com.brenoedl.appdeidiomas.ui.theme.White
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +59,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Home(){
     var espandirMenu by remember { mutableStateOf(false) }
+
+    val scope = rememberCoroutineScope()
+    val context = LocalContext.current
+
 
     Scaffold(
         modifier = Modifier,
@@ -98,6 +106,10 @@ fun Home(){
                                     )
                                 },
                                 onClick = {
+                                    scope.launch {
+                                        LanguagePreferences.saveLanguage(context = context, language = "pt")
+                                    }
+                                    espandirMenu = false
                                 }
                             )
 
@@ -113,6 +125,10 @@ fun Home(){
                                     )
                                 },
                                 onClick = {
+                                    scope.launch {
+                                        LanguagePreferences.saveLanguage(context = context, language = "en")
+                                    }
+                                    espandirMenu = false
                                 }
                             )
 
@@ -128,6 +144,10 @@ fun Home(){
                                     )
                                 },
                                 onClick = {
+                                    scope.launch {
+                                        LanguagePreferences.saveLanguage(context = context, language = "es")
+                                    }
+                                    espandirMenu = false
                                 }
                             )
                         }

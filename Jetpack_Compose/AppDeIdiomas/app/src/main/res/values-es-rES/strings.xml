@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicación de idiomas</string>
+    <string name="idioma">Español</string>
+    <string name="descricao">Mi nombre es Breno Emanuel y soy desarrollador de juegos para móviles (Android), web y ordenador (Windows).</string>
+</resources>
