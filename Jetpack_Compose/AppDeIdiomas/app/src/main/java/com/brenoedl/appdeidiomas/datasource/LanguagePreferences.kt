@@ -13,9 +13,9 @@ val Context.dataStore by preferencesDataStore(name = "lenguage")
 object LanguagePreferences {
     private val LANGUAGE_KEY = stringPreferencesKey("language_key")
 
-    suspend fun saveLanguage(context: Context, language: String) {
+    suspend fun saveLanguage(context: Context, languageCode: String) {
         context.dataStore.edit { preferences ->
-            preferences[LANGUAGE_KEY] = language
+            preferences[LANGUAGE_KEY] = languageCode
         }
     }
 

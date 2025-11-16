@@ -1,9 +1,12 @@
 package com.brenoedl.appdeidiomas
 
+import android.app.LocaleManager
+import android.content.Context
+import android.os.Build
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -25,6 +28,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -36,16 +40,20 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import android.os.LocaleList
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.os.LocaleListCompat
 import com.brenoedl.appdeidiomas.datasource.LanguagePreferences
 import com.brenoedl.appdeidiomas.ui.theme.Blue900
 import com.brenoedl.appdeidiomas.ui.theme.Gray900
 import com.brenoedl.appdeidiomas.ui.theme.White
 import kotlinx.coroutines.launch
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -59,10 +67,18 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Home(){
     var espandirMenu by remember { mutableStateOf(false) }
+    var language by remember { mutableStateOf("") }
+    var flag by remember { mutableIntStateOf(R.drawable.bandeira1) }
 
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
 
+    LaunchedEffect(Unit) {
+        LanguagePreferences.getLanguage(context = context).collect {
+            language = it
+            setLanguage(context = context, languageCode = language)
+        }
+    }
 
     Scaffold(
         modifier = Modifier,
@@ -107,9 +123,9 @@ fun Home(){
                                 },
                                 onClick = {
                                     scope.launch {
-                                        LanguagePreferences.saveLanguage(context = context, language = "pt")
+                                        LanguagePreferences.saveLanguage(context = context, languageCode = "pt")
+                                        espandirMenu = false
                                     }
-                                    espandirMenu = false
                                 }
                             )
 
@@ -126,9 +142,9 @@ fun Home(){
                                 },
                                 onClick = {
                                     scope.launch {
-                                        LanguagePreferences.saveLanguage(context = context, language = "en")
+                                        LanguagePreferences.saveLanguage(context = context, languageCode = "en")
+                                        espandirMenu = false
                                     }
-                                    espandirMenu = false
                                 }
                             )
 
@@ -145,9 +161,9 @@ fun Home(){
                                 },
                                 onClick = {
                                     scope.launch {
-                                        LanguagePreferences.saveLanguage(context = context, language = "es")
+                                        LanguagePreferences.saveLanguage(context = context, languageCode = "es")
+                                        espandirMenu = false
                                     }
-                                    espandirMenu = false
                                 }
                             )
                         }
@@ -161,8 +177,15 @@ fun Home(){
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ){
+
+            when(language){
+                "pt" -> flag = R.drawable.bandeira1
+                "en" -> flag = R.drawable.bandeira2
+                "es" -> flag = R.drawable.bandeira3
+            }
+
             Image(
-                painter = painterResource(id = R.drawable.bandeira1),
+                painter = painterResource(id = flag),
                 contentDescription = null,
                 modifier = Modifier.size(200.dp)
             )
@@ -181,6 +204,15 @@ fun Home(){
                     .border(2.dp, Blue900).padding(10.dp)
             )
         }
+    }
+}
+
+private fun setLanguage(context: Context, languageCode: String) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+        context.getSystemService(LocaleManager::class.java)
+            .applicationLocales = LocaleList.forLanguageTags(languageCode)
+    }else{
+        AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(languageCode))
     }
 }
 
