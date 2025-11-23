@@ -4,36 +4,41 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.brenoedl.agendadecontatosemcompose.ui.theme.AgendaDeContatosEmComposeTheme
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.brenoedl.agendadecontatosemcompose.vviews.AtualizarContato
+import com.brenoedl.agendadecontatosemcompose.vviews.ListaContatos
+import com.brenoedl.agendadecontatosemcompose.vviews.SalvarContato
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            val navController = rememberNavController()
+
+            NavHost(navController = navController, startDestination = "ListaContatos") {
+                composable("ListaContatos") {
+                    ListaContatos(navController)
+                }
+                composable("SalvarContato") {
+                    SalvarContato(navController)
+                }
+                composable(
+                    route = "AtualizarContato/{id}/{nome}/{sobrenome}/{idade}/{celular}",
+                    arguments = listOf(
+                        navArgument("id"){},
+                        navArgument("nome"){},
+                        navArgument("sobrenome"){},
+                        navArgument("idade"){},
+                        navArgument("celular"){}
+                    )
+                    ) {
+                    AtualizarContato(navController, it.arguments?.getString("id").toString(),  it.arguments?.getString("nome").toString(), it.arguments?.getString("sobrenome").toString(), it.arguments?.getString("idade").toString(), it.arguments?.getString("celular").toString())
+                }
+            }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AgendaDeContatosEmComposeTheme {
-        Greeting("Android")
     }
 }
