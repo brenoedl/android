@@ -20,7 +20,6 @@ fun ButtonCustom(
 ) {
     Button(
         onClick = onClick,
-
         modifier = Modifier.fillMaxWidth().padding(20.dp).background(
             color = Purple500,
             shape = RoundedCornerShape(10.dp)
