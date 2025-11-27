@@ -1,0 +1,36 @@
+package com.brenoedl.buscadordecep.componentes
+
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.brenoedl.buscadordecep.ui.theme.Teal700
+import com.brenoedl.buscadordecep.ui.theme.White
+
+@Composable
+fun ButtonCustom(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    tezto: String = ""
+) {
+    Button(
+        onClick = onClick,
+        modifier = modifier,
+        shape = RoundedCornerShape(10.dp),
+        colors = ButtonDefaults.buttonColors(
+            containerColor = Teal700
+        )
+    ){
+        Text(
+            text = tezto,
+            fontSize = 17.sp,
+            color = White,
+            modifier = Modifier.padding(14.dp)
+        )
+    }
+}
