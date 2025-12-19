@@ -1,4 +1,4 @@
-package com.stackmobile.aplicativodefilmes.ui.theme.model
+package com.stackmobile.aplicativodefilmes.model
 
 data class Categoria(
    val titulo: String? = null,

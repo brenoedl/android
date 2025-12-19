@@ -1,4 +1,4 @@
-package com.stackmobile.aplicativodefilmes.ui.theme.itemLista
+package com.stackmobile.aplicativodefilmes.itemLista
 
 
 import androidx.compose.foundation.clickable
@@ -20,9 +20,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
 import com.stackmobile.aplicativodefilmes.R
+import com.stackmobile.aplicativodefilmes.model.Categoria
 import com.stackmobile.aplicativodefilmes.ui.theme.WHITE
-import com.stackmobile.aplicativodefilmes.ui.theme.model.Categoria
-import java.net.URLEncoder
 
 @Composable
 fun Categorias(

@@ -1,4 +1,4 @@
-package com.stackmobile.aplicativodefilmes.ui.theme.view
+package com.stackmobile.aplicativodefilmes.view
 
 import android.widget.Toast
 import androidx.compose.foundation.background
@@ -27,10 +27,12 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.stackmobile.aplicativodefilmes.R
 import com.stackmobile.aplicativodefilmes.ui.theme.BLACK100
 import com.stackmobile.aplicativodefilmes.ui.theme.BLACK50
 import com.stackmobile.aplicativodefilmes.ui.theme.WHITE
@@ -140,9 +142,19 @@ fun DetalhesFilme(
                     fontWeight = FontWeight.Bold
                 )
             }
-
         }
     }
+}
 
-
+@Preview(showBackground = true)
+@Composable
+fun DetalhesFilmePreview(){
+    DetalhesFilme(
+        navController = NavController(LocalContext.current),
+        id = 1,
+        nome = "Nome 1",
+        url = R.drawable.placeholder_image_film,
+        descricao = "Desc 1",
+        elenco = "elenco 1"
+    )
 }

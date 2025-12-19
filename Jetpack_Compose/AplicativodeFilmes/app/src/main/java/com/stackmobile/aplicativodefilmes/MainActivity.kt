@@ -9,9 +9,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.stackmobile.aplicativodefilmes.ui.theme.view.DetalhesFilme
-import com.stackmobile.aplicativodefilmes.ui.theme.view.Home
-import com.stackmobile.aplicativodefilmes.ui.theme.viewModel.HomeViewModel
+import com.stackmobile.aplicativodefilmes.view.DetalhesFilme
+import com.stackmobile.aplicativodefilmes.view.Home
+import com.stackmobile.aplicativodefilmes.viewModel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

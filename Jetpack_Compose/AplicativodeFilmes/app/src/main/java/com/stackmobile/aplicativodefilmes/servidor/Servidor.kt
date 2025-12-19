@@ -1,4 +1,4 @@
-package com.stackmobile.aplicativodefilmes.ui.theme.servidor
+package com.stackmobile.aplicativodefilmes.servidor
 
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.cache.HttpCache

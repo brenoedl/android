@@ -1,6 +1,7 @@
-package com.stackmobile.aplicativodefilmes.ui.theme.view
+package com.stackmobile.aplicativodefilmes.view
 
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
@@ -33,22 +34,24 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.stackmobile.aplicativodefilmes.R
+import com.stackmobile.aplicativodefilmes.itemLista.Categorias
+import com.stackmobile.aplicativodefilmes.model.Categoria
+import com.stackmobile.aplicativodefilmes.model.Filme
 import com.stackmobile.aplicativodefilmes.ui.theme.BLACK100
 import com.stackmobile.aplicativodefilmes.ui.theme.BLACK50
 import com.stackmobile.aplicativodefilmes.ui.theme.WHITE
-import com.stackmobile.aplicativodefilmes.ui.theme.itemLista.Categorias
-import com.stackmobile.aplicativodefilmes.ui.theme.model.Categoria
-import com.stackmobile.aplicativodefilmes.ui.theme.model.Filme
-import com.stackmobile.aplicativodefilmes.ui.theme.viewModel.HomeViewModel
+import com.stackmobile.aplicativodefilmes.viewModel.HomeViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@SuppressLint("MutableCollectionMutableState")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Home(
@@ -279,7 +282,7 @@ fun Home(
                         modifier = Modifier.fillMaxWidth()
                     ){
                         itemsIndexed(listaCategorias) { position, _ ->
-                            Categorias(listaCategorias, position,navController)
+                            Categorias(listaCategorias, position, navController)
                         }
                     }
                 }
@@ -303,4 +306,10 @@ fun checkInternetConnection(context: Context): Boolean {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun HomePreview() {
+    val navController = NavController(LocalContext.current)
+    Home(navController)
+}
 

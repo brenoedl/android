@@ -1,4 +1,4 @@
-package com.stackmobile.aplicativodefilmes.ui.theme
+package com.stackmobile.aplicativodefilmes
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
