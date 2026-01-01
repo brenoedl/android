@@ -19,7 +19,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
             val navController = rememberNavController()
             val homeViewModel: HomeViewModel = hiltViewModel()
 
@@ -58,12 +57,11 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         id = it.arguments?.getInt("id"),
                         nome = it.arguments?.getString("nome"),
-                        url = it.arguments?.getInt("url"),
+                        url = it.arguments?.getString("url"),
                         descricao = it.arguments?.getString("descricao"),
                         elenco = it.arguments?.getString("elenco")
                     )
                 }
-
             }
         }
     }

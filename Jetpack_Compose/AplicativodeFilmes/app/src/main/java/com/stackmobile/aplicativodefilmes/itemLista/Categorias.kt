@@ -22,6 +22,7 @@ import coil.compose.AsyncImage
 import com.stackmobile.aplicativodefilmes.R
 import com.stackmobile.aplicativodefilmes.model.Categoria
 import com.stackmobile.aplicativodefilmes.ui.theme.WHITE
+import java.net.URLEncoder
 
 @Composable
 fun Categorias(
@@ -61,7 +62,7 @@ fun Categorias(
                                        val elenco = filmes[position].elenco
 
                                        navController.navigate(
-                                           "DetalhesFilme/$id/$nome/${url}/$descricao/$elenco"
+                                           "DetalhesFilme/$id/$nome/${URLEncoder.encode(url, "UTF-8")}/$descricao/$elenco"
                                        )
                                    },
                                    role = Role.Image

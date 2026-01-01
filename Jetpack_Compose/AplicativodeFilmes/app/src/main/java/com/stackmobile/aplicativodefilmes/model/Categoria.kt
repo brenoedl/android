@@ -6,7 +6,7 @@ data class Categoria(
 )
 
 data class Filme(
-    val capa: Int? = null,
+    val capa: String? = null,
     val id: Int = 0,
     val nome: String? = null,
     val elenco: String? = null,

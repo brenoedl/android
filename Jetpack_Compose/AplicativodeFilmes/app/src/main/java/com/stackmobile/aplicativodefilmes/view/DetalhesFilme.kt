@@ -44,7 +44,7 @@ fun DetalhesFilme(
     navController: NavController,
     id: Int?,
     nome: String?,
-    url: Int?,
+    url: String?,
     descricao: String?,
     elenco: String?
 ){
@@ -88,7 +88,7 @@ fun DetalhesFilme(
         ) {
 
             AsyncImage(
-                model = url,
+                model = URLDecoder.decode(url, "UTF-8"),
                 contentDescription = null,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -144,17 +144,4 @@ fun DetalhesFilme(
             }
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DetalhesFilmePreview(){
-    DetalhesFilme(
-        navController = NavController(LocalContext.current),
-        id = 1,
-        nome = "Nome 1",
-        url = R.drawable.placeholder_image_film,
-        descricao = "Desc 1",
-        elenco = "elenco 1"
-    )
 }

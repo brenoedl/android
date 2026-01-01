@@ -66,140 +66,7 @@ fun Home(
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
 
-    var listaCategorias by remember { mutableStateOf<MutableList<Categoria>> (mutableListOf(
-        Categoria(
-            titulo = "Categoria 1",
-            filmes = mutableListOf(
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 1,
-                    nome = "Nome 1",
-                    elenco = "elenco 1",
-                    descricao = "Desc 1"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 1,
-                    nome = "Nome 1",
-                    elenco = "elenco 1",
-                    descricao = "Desc 1"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 1,
-                    nome = "Nome 1",
-                    elenco = "elenco 1",
-                    descricao = "Desc 1"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 1,
-                    nome = "Nome 1",
-                    elenco = "elenco 1",
-                    descricao = "Desc 1"
-                )
-            )
-        ),
-        Categoria(
-            titulo = "Categoria 2",
-            filmes = mutableListOf(
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 2,
-                    nome = "Nome 2",
-                    elenco = "elenco 2",
-                    descricao = "Desc 2"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 2,
-                    nome = "Nome 2",
-                    elenco = "elenco 2",
-                    descricao = "Desc 2"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 2,
-                    nome = "Nome 2",
-                    elenco = "elenco 2",
-                    descricao = "Desc 2"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 2,
-                    nome = "Nome 2",
-                    elenco = "elenco 2",
-                    descricao = "Desc 2"
-                )
-            )
-        ),
-        Categoria(
-            titulo = "Categoria 3",
-            filmes = mutableListOf(
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 3,
-                    nome = "Nome 3",
-                    elenco = "elenco 3",
-                    descricao = "Desc 3"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 3,
-                    nome = "Nome 3",
-                    elenco = "elenco 3",
-                    descricao = "Desc 3"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 3,
-                    nome = "Nome 3",
-                    elenco = "elenco 3",
-                    descricao = "Desc 3"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 3,
-                    nome = "Nome 3",
-                    elenco = "elenco 3",
-                    descricao = "Desc 3"
-                )
-            )
-        ),
-        Categoria(
-            titulo = "Categoria 4",
-            filmes = mutableListOf(
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 4,
-                    nome = "Nome 4",
-                    elenco = "elenco 4",
-                    descricao = "Desc 4"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 4,
-                    nome = "Nome 4",
-                    elenco = "elenco 4",
-                    descricao = "Desc 4"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 4,
-                    nome = "Nome 4",
-                    elenco = "elenco 4",
-                    descricao = "Desc 4"
-                ),
-                Filme(
-                    capa = R.drawable.placeholder_image_film,
-                    id = 4,
-                    nome = "Nome 4",
-                    elenco = "elenco 4",
-                    descricao = "Desc 4"
-                )
-            )
-        )
-    )) }
+    var listaCategorias by remember { mutableStateOf<MutableList<Categoria>> (mutableListOf()) }
 
     LaunchedEffect(Unit) {
 
@@ -210,23 +77,26 @@ fun Home(
             if (!isConnected){
                 internetStatus = true
             }else{
-                progressBarVisibility = false
+                viewModel.getCateggooria(
+                    respostaDoServidor = { categorias ->
+                        listaCategorias = categorias
+                        progressBarVisibility = false
+                    },
+                    respostaErro = { error ->
+                        Toast.makeText(context,error,Toast.LENGTH_SHORT).show()
+                    }
+                )
             }
-
-            }
-
+        }
         scope.launch(Dispatchers.Main){
             if (internetStatus){
                 Toast.makeText(context,"Erro de acesso a internet!",Toast.LENGTH_SHORT).show()
             }
         }
-
         while (true){
             delay(500)
             pontosAnimados = (pontosAnimados + 1) % 4
         }
-
-
     }
 
 
@@ -287,9 +157,7 @@ fun Home(
                     }
                 }
             }
-
     }
-
 }
 
 fun checkInternetConnection(context: Context): Boolean {
@@ -304,12 +172,5 @@ fun checkInternetConnection(context: Context): Boolean {
         val networkInfo = connectivityManager.activeNetworkInfo
         return networkInfo?.isConnected ?: false
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun HomePreview() {
-    val navController = NavController(LocalContext.current)
-    Home(navController)
 }
 
