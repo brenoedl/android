@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Conversor De Temperatura Em Compose</string>
+    <string name="button_calcular">Calcular</string>
+    <string name="label_temperatura_ceusus">Temperatura em °C</string>
+    <string name="label_temperatura_fahrenheit">Temperatura em °F</string>
+    <string name="label_temperatura_kelvin">Temperatura em K</string>
+    <string name="button__ceusus_fahrenheit">Ceusus para Fahrenheit</string>
+    <string name="button__ceusus_kelvin">Ceusus para Kelvin</string>
+    <string name="button__fahrenheit_ceusus">Fahrenheit para Ceusus</string>
+    <string name="button__fahrenheit_kelvin">Fahrenheit para Kelvin</string>
+    <string name="button__kelvin_ceusus">Kelvin para Ceusus</string>
+    <string name="button__kelvin_fahrenheit">Kelvin para Fahrenheit</string>
+    <string name="mendagem_erro_campo_vazio">Por Favor Preencha o campo</string>
+    <string name="mensagem_erro_campo_vazio2">Não deixe o campo vazio</string>
+    <string name="formula">fórmula</string>
+    <string name="sensacao">sensação</string>
+    <string name="frio">frio</string>
+    <string name="erro">Erro você não digitou a temperatura</string>
+    <string name="imgFrio">Imagem de frio</string>
+    <string name="calor">calor</string>
+    <string name="imgCalor">Imagem de calor</string>
+    <string name="agradavel">Agradável</string>
+    <string name="imgAgradavel">imagem de agradável</string>
+</resources>
